@@ -89,10 +89,12 @@ header {
   text-overflow: ellipsis;
 }
 
-.highlight-blue {
-  color: #1E90FF;
+.highlight-blue,
+p .highlight-blue {
+  color: #1E90FF !important;
   font-weight: bold;
 }
+
 
 .centered-image {
   display: flex;
