@@ -16,7 +16,7 @@
                 </a>
                 <ul class="nav-links">
                     <li><a href="#about-us">About Us</a></li>
-                   <li><a href="#team">Team</a></li>
+                    <li><a href="#" id="team-link">Team</a></li>
                 </ul>
             </nav>
         </div>
@@ -75,28 +75,27 @@
         </div>
     </footer>
 <script>
-function showTeam() {
-    const team = document.getElementById('team');
-    team.classList.add('show');
-}
+  function showTeam() {
+    document.getElementById('team').classList.add('show');
+  }
 
-function hideTeam() {
-    const team = document.getElementById('team');
-    team.classList.remove('show');
-}
+  function hideTeam() {
+    document.getElementById('team').classList.remove('show');
+  }
 
-    // Event-Listener für den "Team" Link
-    document.addEventListener('DOMContentLoaded', function() {
-        const teamLink = document.querySelector('a[href="team.html"]');
-        if (teamLink) {
-            teamLink.addEventListener('click', function(event) {
-                event.preventDefault(); // Verhindert neues Fenster
-                showTeam();
-            });
-        }
-    });
+  // Button "Team" im Menü aktivieren
+  document.addEventListener('DOMContentLoaded', function () {
+    const teamLink = document.getElementById('team-link');
+    if (teamLink) {
+      teamLink.addEventListener('click', function (event) {
+        event.preventDefault(); // Kein Seitenwechsel
+        showTeam();
+        // Optional: Seite zum Team-Bereich scrollen
+        document.getElementById('team').scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  });
 </script>
-
-    
+  
 </body>
 </html>
