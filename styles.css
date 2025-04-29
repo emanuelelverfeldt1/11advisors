@@ -184,7 +184,9 @@ header {
   background-color: transparent;
   margin-bottom: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: block; 
 }
+
 
 .team-member a:hover {
   text-decoration: underline;
