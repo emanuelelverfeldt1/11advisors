@@ -74,5 +74,27 @@
             <p>© 2025, 11 Advisors</p>
         </div>
     </footer>
+<script>
+    function showTeam() {
+        document.getElementById('team').style.display = 'block';
+    }
+
+    function hideTeam() {
+        document.getElementById('team').style.display = 'none';
+    }
+
+    // Event-Listener für den "Team" Link
+    document.addEventListener('DOMContentLoaded', function() {
+        const teamLink = document.querySelector('a[href="team.html"]');
+        if (teamLink) {
+            teamLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Verhindert neues Fenster
+                showTeam();
+            });
+        }
+    });
+</script>
+
+    
 </body>
 </html>
