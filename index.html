@@ -75,13 +75,15 @@
         </div>
     </footer>
 <script>
-    function showTeam() {
-        document.getElementById('team').style.display = 'block';
-    }
+function showTeam() {
+    const team = document.getElementById('team');
+    team.classList.add('show');
+}
 
-    function hideTeam() {
-        document.getElementById('team').style.display = 'none';
-    }
+function hideTeam() {
+    const team = document.getElementById('team');
+    team.classList.remove('show');
+}
 
     // Event-Listener für den "Team" Link
     document.addEventListener('DOMContentLoaded', function() {
