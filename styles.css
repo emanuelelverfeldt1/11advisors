@@ -102,7 +102,7 @@ p .highlight-blue {
     display: flex;
     justify-content: center; /* Horizontal zentrieren */
     align-items: center; /* Vertikal zentrieren (falls nötig) */
-    padding: 4rem 0; /* Abstand ober- und unterhalb des Bildes */
+    padding: 0; /* Abstand ober- und unterhalb des Bildes */
 }
 
 .centered-image img {
