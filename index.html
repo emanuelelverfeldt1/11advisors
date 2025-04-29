@@ -1,101 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>11 Advisors</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>11 Advisors</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">
-                    <img src="11.png" alt="11 Advisors Logo">
-                </a>
-                <ul class="nav-links">
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#" id="team-link">Team</a></li>
-                </ul>
-            </nav>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <img src="11.png" alt="11 Advisors Logo" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#" id="team-link">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="team" class="content">
+    <div class="container">
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <h3>Emanuel Elverfeldt</h3>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
         </div>
-    </header>
-
-    <section id="team" class="content" style="display: none;">
-        <div class="container">
-            <h2>Our Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <h3>Emanuel Elverfeldt</h3>
-                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                </div>
-                <div class="team-member">
-                    <h3>Constantin Elverfeldt</h3>
-                    <a href="https://www.linkedin.com/in/constantinelverfeldt/" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-            <button onclick="hideTeam()">Close</button>
+        <div class="team-member">
+          <h3>Constantin Elverfeldt</h3>
+          <a href="https://www.linkedin.com/in/constantinelverfeldt/" target="_blank">LinkedIn</a>
         </div>
-    </section>
+      </div>
+      <button onclick="hideTeam()">Close</button>
+    </div>
+  </section>
 
-    <section class="hero">
-        <div class="container">
-            <p class="subtitle">11 Advisors_____</p>
-            <h1>Expert <span class="highlight-blue">investment and asset management</span> advice empowering real estate owners to unlock full potential.</h1>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="container">
+      <p class="subtitle">11 Advisors_____</p>
+      <h1>
+        Expert <span class="highlight-blue">investment and asset management</span> advice empowering real estate owners to unlock full potential.
+      </h1>
+    </div>
+  </section>
 
-    <section class="centered-image">
-        <img src="RE1.png" alt="Description of the image">
-    </section>
+  <section class="centered-image">
+    <img src="RE1.png" alt="Description of the image" />
+  </section>
 
-    <section id="about-us" class="content">
-        <div class="container">
-            <p class="subtitle">About Us_____</p>
-            <p class="description">
-                Extensive expertise and proven track record in executing investment transactions and asset management across diverse asset classes. 
-                Offering comprehensive support and guidance at every stage of the transaction process.
-            </p>
-            <div class="about-details">
-                <p><span class="highlight-blue">01</span> Active across the European market, with a primary focus on Germany.</p>
-                <p><span class="highlight-blue">02</span> Deal size agnostic, offering expertise across all asset classes.</p>
-                <p><span class="highlight-blue">03</span> Powered by a strong team and trusted professional partners.</p>
-            </div>
-        </div>
-    </section>
+  <section id="about-us" class="content">
+    <div class="container">
+      <p class="subtitle">About Us_____</p>
+      <p class="description">
+        Extensive expertise and proven track record in executing investment transactions and asset management across diverse asset classes. 
+        Offering comprehensive support and guidance at every stage of the transaction process.
+      </p>
+      <div class="about-details">
+        <p><span class="highlight-blue">01</span> Active across the European market, with a primary focus on Germany.</p>
+        <p><span class="highlight-blue">02</span> Deal size agnostic, offering expertise across all asset classes.</p>
+        <p><span class="highlight-blue">03</span> Powered by a strong team and trusted professional partners.</p>
+      </div>
+    </div>
+  </section>
 
-    <footer id="imprint">
-        <div class="container footer-container">
-            <ul class="footer-links">
-                <li><a href="imprint.html" target="_blank">Imprint</a></li>
-                <li><a href="#privacy-policy">Privacy Policy</a></li>
-            </ul>
-            <p>© 2025, 11 Advisors</p>
-        </div>
-    </footer>
-<script>
-  function showTeam() {
-    document.getElementById('team').classList.add('show');
-  }
+  <footer id="imprint">
+    <div class="container footer-container">
+      <ul class="footer-links">
+        <li><a href="imprint.html" target="_blank">Imprint</a></li>
+        <li><a href="#privacy-policy">Privacy Policy</a></li>
+      </ul>
+      <p>© 2025, 11 Advisors</p>
+    </div>
+  </footer>
 
-  function hideTeam() {
-    document.getElementById('team').classList.remove('show');
-  }
-
-  // Button "Team" im Menü aktivieren
-  document.addEventListener('DOMContentLoaded', function () {
-    const teamLink = document.getElementById('team-link');
-    if (teamLink) {
-      teamLink.addEventListener('click', function (event) {
-        event.preventDefault(); // Kein Seitenwechsel
-        showTeam();
-        // Optional: Seite zum Team-Bereich scrollen
-        document.getElementById('team').scrollIntoView({ behavior: 'smooth' });
-      });
+  <script>
+    function showTeam() {
+      const team = document.getElementById('team');
+      team.classList.add('show');
     }
-  });
-</script>
-  
+
+    function hideTeam() {
+      const team = document.getElementById('team');
+      team.classList.remove('show');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const teamLink = document.getElementById('team-link');
+      if (teamLink) {
+        teamLink.addEventListener('click', function (event) {
+          event.preventDefault();
+          showTeam();
+          document.getElementById('team').scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
+
 </body>
 </html>
