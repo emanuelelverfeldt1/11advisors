@@ -1,243 +1,241 @@
 /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background: #fff;
-    color: #000;
-    line-height: 1.6;
+  background: #fff;
+  color: #000;
+  line-height: 1.6;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Header and Navigation */
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #ccc;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  z-index: 1000;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 .navbar .logo img {
-    height: 50px; /* Logo-Größe */
-    width: auto;
-    display: block;
+  height: 50px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* Links ausrichten */
-    background: #f7f7f7;
-    padding: 2rem;
-    margin-bottom: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f7f7f7;
+  padding: 2rem;
+  margin-bottom: 0;
 }
 
 .subtitle {
-    font-size: 1rem;
-    color: #777;
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: left; /* Links ausrichten */
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .hero h1 {
-    font-size: 2.2rem; /* Schriftgröße */
-    margin: 0;
-    line-height: 1.5;
-    text-align: left; /* Links ausrichten */
-    overflow: hidden; /* Überschüssigen Text ausblenden, falls nötig */
-    text-overflow: ellipsis; /* Optional: Punkte bei abgeschnittenem Text */
+  font-size: 2.2rem;
+  line-height: 1.5;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 .highlight-blue {
-    color: #1E90FF; /* Dunkelblau */
-    font-weight: bold; /* Optional: Fettschrift */
+  color: #1E90FF;
+  font-weight: bold;
 }
-p .highlight-blue {
-    color: #1E90FF; /* Dodger Blue */
-    font-weight: bold; /* Optional */
-}
-.highlight-blue {
-    color: #1E90FF !important;
-    font-weight: bold;
-}
+
 .centered-image {
-    display: flex;
-    justify-content: center; /* Horizontal zentrieren */
-    align-items: center; /* Vertikal zentrieren (falls nötig) */
-    padding: 0; /* Abstand ober- und unterhalb des Bildes */
-    background-color: #f5f5f5; /* gleiche Farbe wie hero, falls gewünscht */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
 .centered-image img {
-    max-width: 100%; /* Bild passt sich dem Container an */
-    height: auto; /* Erhält die Proportionen */
+  max-width: 100%;
+  height: auto;
 }
-
-
 
 /* About Us Section */
 #about-us {
-    padding: 4rem 0;
+  padding: 4rem 0;
 }
 
 #about-us .subtitle {
-    font-size: 1rem;
-    color: #777;
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: left;
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 #about-us .description {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    text-align: left;
-    margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 1.5rem;
 }
 
 .about-details p {
-    font-size: 0.9rem; /* Kleinere Schriftgröße */
-    line-height: 1.4; /* Engere Zeilenhöhe */
-    margin-bottom: 1rem; /* Abstand zwischen den Zeilen */
-    text-align: left; /* Links ausrichten */
-    color: #555; /* Dezente Textfarbe */
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #555;
 }
 
 .about-details span {
-    font-weight: bold; /* Hebt die Nummer hervor */
-    color: #000; /* Schwarze Farbe für die Nummer */
-    margin-right: 0.5rem; /* Abstand zur Beschreibung */
+  font-weight: bold;
+  color: #000;
+  margin-right: 0.5rem;
 }
 
 /* Team Section */
 #team {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    padding: 8rem 0;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 8rem 0;
 }
+
 #team.show {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 
 .team-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .team-member {
-    text-align: left; /* Links ausrichten */
-    max-width: 300px;
+  text-align: left;
+  max-width: 300px;
 }
 
 .team-member h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .team-member a {
-    color: #007BFF;
-    text-decoration: none;
+  color: #007BFF;
+  text-decoration: none;
 }
 
 .team-member a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
+/* Imprint Section */
 .imprint {
-    padding-top: 8rem; /* Add extra space */
+  padding-top: 8rem;
 }
-.imprint-content strong {
-    font-size: 1.5rem; /* Größere Schriftgröße */
-    color: #000; /* Optional: Textfarbe */
-    font-weight: bold; /* Stellt sicher, dass der Text fett bleibt */
-}
+
 .imprint-content {
-    text-align: left; /* Links bündig */
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #555; /* Graue Schrift */
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.imprint-content strong {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
 }
 
 .imprint-content p {
-    margin-bottom: 1.5rem; /* Abstand zwischen den Absätzen */
+  margin-bottom: 1.5rem;
 }
 
 /* Footer */
 footer {
-    background: #f7f7f7;
-    padding: 1rem 0;
-    border-top: 1px solid #ccc;
+  background: #f7f7f7;
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
 }
 
 .footer-container {
-    display: flex; /* Flexbox-Layout aktivieren */
-    justify-content: space-between; /* Links linksbündig, Text rechtsbündig */
-    align-items: center; /* Elemente vertikal zentrieren */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-links {
-    list-style: none; /* Entfernt Aufzählungszeichen */
-    display: flex; /* Links in einer Reihe */
-    gap: 1.5rem; /* Abstand zwischen Links */
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-links a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
 }
 
 .footer-links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer p {
-    margin: 0; /* Kein zusätzlicher Abstand */
-    font-size: 0.9rem; /* Schriftgröße für den Text */
-    color: #000;
-    margin-left: auto; /* Schiebt den Text ganz nach rechts */
+  margin: 0;
+  font-size: 0.9rem;
+  color: #000;
+  margin-left: auto;
 }
