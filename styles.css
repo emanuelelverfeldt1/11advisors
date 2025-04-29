@@ -176,6 +176,16 @@ header {
   text-decoration: none;
 }
 
+.team-photo {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
 .team-member a:hover {
   text-decoration: underline;
 }
