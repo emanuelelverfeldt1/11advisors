@@ -66,6 +66,7 @@ header {
     align-items: flex-start; /* Links ausrichten */
     background: #f7f7f7;
     padding: 2rem;
+    margin-bottom: 0px;
 }
 
 .subtitle {
