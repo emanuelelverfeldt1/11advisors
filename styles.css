@@ -103,6 +103,7 @@ p .highlight-blue {
     justify-content: center; /* Horizontal zentrieren */
     align-items: center; /* Vertikal zentrieren (falls nötig) */
     padding: 0; /* Abstand ober- und unterhalb des Bildes */
+    background-color: #f5f5f5; /* gleiche Farbe wie hero, falls gewünscht */
 }
 
 .centered-image img {
