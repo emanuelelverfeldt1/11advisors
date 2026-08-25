@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>11 Advisors</title>
+  <meta name="description" content="11 Advisors provides expert investment and asset management advice, empowering real estate owners across Europe to unlock the full potential of their assets." />
+  <meta property="og:title" content="11 Advisors" />
+  <meta property="og:description" content="Expert investment and asset management advice empowering real estate owners to unlock full potential." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.11advisors.com/" />
+  <meta property="og:image" content="https://www.11advisors.com/RE1.webp" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.png" type="image/png" />
 </head>
@@ -17,25 +23,12 @@
         </a>
         <ul class="nav-links">
           <li><a href="#about-us">About Us</a></li>
-          <li><a href="#" id="team-link">Team</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
-  <section id="team" class="content">
-    <div class="container">
-      <h2>Our Team</h2>
-      <div class="team-grid">
-        <div class="team-member">
-          <img src="emanuel.png" alt="Emanuel Elverfeldt" class="team-photo" />
-          <h3>Emanuel Elverfeldt</h3>
-          <a href="https://www.linkedin.com/in/emanuel-e-20b23373" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-      <button onclick="hideTeam()">Close</button>
-    </div>
-  </section>
 
   <section class="hero">
     <div class="container">
@@ -47,14 +40,14 @@
   </section>
 
   <section class="centered-image">
-    <img src="RE1.png" alt="Description of the image" />
+    <img src="RE1.webp" alt="Modern residential real estate development managed by 11 Advisors" />
   </section>
 
   <section id="about-us" class="content">
     <div class="container">
       <p class="subtitle">About Us_____</p>
       <p class="description">
-        Extensive expertise and proven track record in executing investment transactions and asset management across diverse asset classes. 
+        Extensive expertise and proven track record in executing investment transactions and asset management across diverse asset classes.
         Offering comprehensive support and guidance at every stage of the transaction process.
       </p>
       <div class="about-details">
@@ -62,6 +55,16 @@
         <p><span class="highlight-blue">02</span> Deal size agnostic, offering expertise across all asset classes.</p>
         <p><span class="highlight-blue">03</span> Powered by a strong team and trusted professional partners.</p>
       </div>
+    </div>
+  </section>
+
+  <section id="contact" class="content contact-section">
+    <div class="container">
+      <p class="subtitle">Contact_____</p>
+      <p class="description">
+        Interested in working together? Get in touch and we'll respond as soon as possible.
+      </p>
+      <a href="mailto:emanuel@11advisors.com" class="button-link">emanuel@11advisors.com</a>
     </div>
   </section>
 
@@ -75,29 +78,5 @@
     </div>
   </footer>
 
-  <script>
-    function showTeam() {
-      const team = document.getElementById('team');
-      team.classList.add('show');
-    }
-
-    function hideTeam() {
-      const team = document.getElementById('team');
-      team.classList.remove('show');
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const teamLink = document.getElementById('team-link');
-      if (teamLink) {
-        teamLink.addEventListener('click', function (event) {
-          event.preventDefault();
-          showTeam();
-          document.getElementById('team').scrollIntoView({ behavior: 'smooth' });
-        });
-      }
-    });
-  </script>
-
 </body>
 </html>
-
